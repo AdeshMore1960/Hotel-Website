@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <div class="row">
+                <img src="images/Logo1.png" class="logo">
+                <ul class="main-nav" id="check-class">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Book Room.html">Book Your Room</a></li>
+                    <li><a href="attraction.html">Attractions </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <img src="images/background1.jpg" alt="" width="100%" height="650px">
+
+    </header>
+
+      <!-----------single product details------------->
+
+      <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/Gulf Ocean Suit/2.jpg" width="800px" height="600px"  id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/Gulf Ocean Suit/2.jpg" width="100%" height="100px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/Gulf Ocean Suit/5.jpg" width="100%" height="100px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/Gulf Ocean Suit/4.jpg" width="100%" height="100px" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/Gulf Ocean Suit/7.jpg" width="100%" height="100px" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+               <h1>Luxury Room</h1>
+               <h4>$200.00</h4>
+               
+
+               <div class="row5">
+                <div class="column6">
+                    <input type="date">
+                    <br>
+                    <label>Check In Date</label>
+                   </div> 
+    
+                   <div class="column7">
+                    <input type="date">
+                    <br>
+                    <label >Check Out Date</label>
+                   </div>
+               </div>
+
+               <select>
+                <option>Select No of Guest</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+          </select>
+
+               <a href="" class="btn">Book Room</a>
+
+               <h3>Room Details <i class="fa fa-indent"></i></h3>
+               <br>
+               <p>Deluxe luxury Rooms offering King size bed, specifically designed to make your stay more comfortable. An attached & well maintained bathroom filled with amenities and room being exquisitely furnished.Deluxe Rooms covering an area between 200-300 square feet, are suitable for double occupancy, visitors to the city.
+
+                Our Spacious & modern rooms will ensure your stay is memorable. With a common facilities such as free Wi-Fi connection,Doctor on call. we ensure your stay is comfortable.
+                
+                Guests can unwind before the LCD TV with national & International news, movies & entertainment channels, the room service any time of the day. Other amenities include telephone.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-----------------footer------------------>
+
+<div class="footer">
+    <div class="container">
+        <div class="row2">
+            <div class="footer-col-1">
+                <h3>About Us</h3>
+                <p>The Royal Hotel is the Luxury hotel <br> that is in mumbai since 1995. It is one<br> of the best place to spend your holidays with your family and friends</p>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo1.png">
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Adesh More</p>
+    </div>
+</div>
+        
+<!----------------js for product gallery-------------->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+</body>
+</html>

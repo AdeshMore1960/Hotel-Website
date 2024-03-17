@@ -1,0 +1,306 @@
+body, html{
+	font-size: 20px;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-top: 0px;
+}
+
+header
+{
+    height: 100vh;
+    margin: 0px;   
+}
+
+.logo1
+{
+    height: 80px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.main-nav1
+{
+    margin-top: 25px;
+    float: right;
+    margin-right: 30px;
+}
+
+.main-nav1 li
+{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+.main-nav1 li a
+{
+    padding: 5px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200px;
+    font-size: 90%;
+}
+.main-nav1 li a::after
+{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.main-nav1 li a:hover::after{
+    width: 100%;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6
+{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+/*
+   fixed = parallax
+   scroll = normal
+*/
+	background-attachment: fixed;
+}
+
+.pimg1{
+	background-image: url('images/map.png');
+	min-height: 100%;
+}
+
+.pimg2{
+	background-image: url('images/beach.jpg');
+	min-height: 100%;
+}
+
+.pimg3{
+	background-image: url('images/goan.jpg');
+	min-height: 100%;
+}
+.pimg4{
+	background-image: url('images/night-life.jpg');
+	min-height: 100%;
+}
+.pimg5{
+	background-image: url('images/galleries.jpg');
+	min-height: 100%;
+}
+.pimg6{
+	background-image: url('images/sports.jpg');
+	min-height: 100%;
+}
+.section
+{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light
+{
+	background-color: #f4f4f4;
+	color: #666;
+
+}
+.section-dark
+{
+	background-color: #2a2e34;
+	color: #ddd;
+}
+
+.ptext
+{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+    font-size: 37px;
+    font-weight: bold;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border
+{ 
+	background-color: rgb(131, 21, 21);
+	color: #000;
+	padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto 1px;
+   
+}
+.logo{
+    height: 80px;
+    width: auto;
+    /* float: left; */
+    margin-top: 15px;
+}
+.main-nav{
+    float: right;
+    margin-top: 50px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200px;
+    font-size: 90%;
+}
+.main-nav li a:hover
+{
+    border-bottom: 5px solid #bf55ec;
+}
+
+/* -------------footer---------------- */
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 , .footer-col-2 , .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: auto;
+    margin-left: 20px;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3{
+    flex-basis: auto;
+    text-align: center;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.facitity{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1{
+    margin-top: 50px;
+   
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.row2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row4{
+    background: #fff3f3;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
